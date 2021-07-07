@@ -48,6 +48,7 @@ func appendAndDelete(s string, t string, k int32) string {
 	}else {
 		return "No"
 	}
+	
 
 }
 
