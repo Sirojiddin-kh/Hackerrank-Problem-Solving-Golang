@@ -1,23 +1,21 @@
-package main
+package main 
 
 import (
+
 	"fmt"
 )
 
-func main() {
+func marsExploration(s string) int32 {
+    var delta int32
+    for j := range s {
+    if s[j] != "SOS"[j%3] {
+    	fmt.Println("SOS"[j%3])
+        delta++
+    }
+    }
+    return delta
 
-	s := "hackerrank"
-	c := "hhaacckkekraraannk"
-
-	s1 := map[string]int 
-	c1 := map[string]int
-
-	for _, value := range s {
-		s1[string(s)] += 1
-	}
-	for _, value := range c {
-		c1[string(s)] + 1
-	}
-	fmt.Println(s1)
-	fmt.Println(c1)
 }
+
+
+
