@@ -10,7 +10,7 @@ func anagram(s string) int32 {
 	}
 	s1 := s[len(s)/2:]
 	s2 := s[:len(s)/2]
-	// fdhlvosfpafhalll
+	
 	m := make(map[rune]int)
 	for _, c := range s1 {
 		m[c]++
